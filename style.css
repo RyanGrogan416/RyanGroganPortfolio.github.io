@@ -1,0 +1,445 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  background: #000;
+  color:  #fff;
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  left: 0;
+  right: 0;
+}
+
+main {
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+.page {
+  min-height: 100vh;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+banner {
+  display: flex;
+  height: 100px;
+  text-align: center; 
+  align-items: end;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* HOME PAGE */
+
+.home{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-image: url('resorces/images/sideProfile.jpg');
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home-text {
+  justify-content: center;
+  color: black;
+  background-color: rgb(255 255 255 / 30%);
+  backdrop-filter: blur(2px);
+}
+
+.home .container {
+  padding: 0 30px;
+  text-decoration: none;
+}
+
+.home h1 {
+  padding-bottom: 5px;
+  margin: 0 0 1rem 0;
+  border-bottom: solid 0.1rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.home p {
+  margin: 0.5rem 0;
+  font-weight: 900;
+}
+
+
+
+
+
+
+
+
+/* ABOUT PAGE */
+
+
+
+.about-wrapper {
+  display: grid;
+  width: 100%;
+  height: 100dvh;
+  left: 0;
+  right: 0;
+  grid-template-areas: 
+    "about-box-1 about-box-2"
+    "about-box-3 about-box-4";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-wrapper > .about-box-1 {
+  background-color: black;
+  color: black;
+  grid-area: about-box-1;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.about-wrapper > .about-box-2 {
+  background-color: white;
+  color: black;
+  grid-area: about-box-2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-wrapper > .about-box-3 {
+  background-color: white;
+  color: black;
+  grid-area: about-box-3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-wrapper > .about-box-4 {
+  background-color: black;
+  grid-area: about-box-4;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+.about-me-btn {
+  background-color: black;
+  color: white;
+  width: 50%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-me-btn:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+
+.resume-btn {
+  background-color: black;
+  color: white;
+  width: 50%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.resume-btn a {
+  text-decoration: none;
+}
+
+.resume-btn a:link {
+  color: white;
+}
+
+.resume-btn a:hover {
+  color: lightpink;
+}
+
+.resume-btn a:visited {
+  color: lightblue;
+}
+
+.resume-btn:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+
+.about-me-content {
+  display: none;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+.about-me-content h1 {
+  width: 100%;
+}
+
+.about-me-content p {
+  width: 100%;
+}
+
+.close-about-me-btn {
+  background-color: black;
+  color: white;
+  width: 25%;
+  height: 12.5%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.close-about-me-btn:hover {
+  background-color: grey;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* EDUCATION PAGE */
+
+.education-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: center;
+}
+.content-card {
+  width: 100%;
+  max-width: 450px;
+  min-width: 200px;
+  min-height: 550px;
+  margin: 10px;
+  color: black;
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: flex-start;
+}
+
+.center{
+  margin: 10px;
+  width: 100%;
+}
+
+.image-container {
+  height: 250px;
+  background-color: grey;
+  margin-bottom: 5px;
+  background-size: cover;
+}
+
+.centeral {
+  background-image: url('https://www.thoughtco.com/thmb/bEZuVkZ_7Gk7Sdbgl8kuVEBox5w=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/image001-d967fad9f4884a7b9560124651858705.jpg');
+}
+
+.uwt {
+  background-image: url('https://www.moorerubleyudell.com/sites/default/files/styles/mry-project-image-main/public/162-Main1.jpg?itok=fo6jSE-r');
+}
+
+.codecademy {
+  background-image: url('https://img.freepik.com/premium-vector/young-man-sits-his-desk-workplace-using-his-personal-desktop-computer-working-online-program-work-home-concept-vector-illustration-isolated-white-background_37895-775.jpg');
+}
+.education h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+.dates {
+  font-weight: bold; 
+  margin: 0;
+  padding: .6rem 0;
+}
+
+.location {
+  font-weight: bold;
+  margin: 0;
+  padding: .6rem 0;
+}
+
+.contentDisplay {
+  display: none;
+}
+
+.contentDisplay li {
+  list-style: inside square !important;
+  padding: 3px;
+}
+
+.read-more-btn {
+  display: block;
+  color: white;
+  background-color: black;
+  text-align: center;
+  justify-content: center;
+  margin: 1.428rem 3.57rem 0;
+  padding: 1rem 1.1rem;
+  
+}
+
+.read-more-btn:hover {
+  background-color: grey;
+  cursor: pointer;
+}
+.close-btn {
+  display: none;
+  color: white;
+  background-color: black;
+  text-align: center;
+  justify-content: center;
+  margin: 1.428rem 3.57rem 0;
+  padding: 1rem 1.1rem;
+}
+
+.close-btn:hover {
+  background-color: grey;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Project page */
+
+.projects {
+  display: inline-block;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.programing {
+  display: flex;
+  width: 50%;
+  height: auto;
+  background-color: white;
+  color: black;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.programing-btn {
+  background-color: black;
+  color: white;
+  width: 50%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.programing-btn:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+
+.graphic-design {
+  display: flex;
+  width: 50%;
+  height: auto;
+  background-color: black;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.graphic-design-btn {
+  background-color: white;
+  color: black;
+  width: 50%;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.graphic-design-btn:hover {
+  cursor: pointer;
+  background-color: grey;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: start;
+  padding: 25px 0;
+}
+
+/* MEDIA INQUERIES*/
+
+@media(max-width: 800px) {
+  .hideOnMobile{
+    display: none;
+  }
+
+  .wrapper h1 {
+    font-size: 20px;
+  }
+
+  .about-info {
+    overflow: scroll;
+    padding: 5px;
+  }
+
+  .about-box-3 {
+    overflow: scroll;
+  }
+
+  .about-me-btn h1{
+    font-size: 20px;
+  }
+
+  .resume-btn h1 {
+    font-size: 20px;
+  }
+  
+  .programing h1 {
+    font-size: 16px;
+  }
+
+  .graphic-design h1 {
+    font-size: 16px;
+  }
+}
