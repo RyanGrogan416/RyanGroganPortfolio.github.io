@@ -23,14 +23,14 @@ const score = (winner) => {
 const determineWinner = (userChoice) => {
   const comp = getComputerChoice();
   if (userChoice == comp) {
-    displayTie(userChoice);
+    displayTie(userChoice, comp);
   } else 
   if (userChoice === 'rock' && comp === 'scissors' 
   || userChoice === 'scissors' && comp === 'paper' 
   || userChoice === 'paper' && comp === 'rock') {
-    displayWinner(userChoice);
+    displayWinner(userChoice, comp);
   } else {
-    displayLoser(userChoice);
+    displayLoser(userChoice, comp);
   }
 }
 
@@ -78,25 +78,25 @@ const disableButtons = () => {
 }
 
 // winner and loser displays
-const displayWinner = (userChoice) => {
+const displayWinner = (userChoice, computerChoice) => {
   score('user');
   document.querySelector(`.${userChoice}`).style.backgroundColor = 'green';
   document.querySelector(`.${userChoice}`).style.color = 'white';
   document.querySelector('.userScore').innerHTML = userScore;
-  document.querySelector('.display').innerHTML = 'winner';
+  document.querySelector('.display').innerHTML = `You chose ${userChoice.toUpperCase()} and the AI chose ${computerChoice.toUpperCase()}: Winner`;
 }
 
-const displayTie = (userChoice) => {
-  document.querySelector('.display').innerHTML =  'tie';
+const displayTie = (userChoice, computerChoice) => {
+  document.querySelector('.display').innerHTML =  `You chose ${userChoice.toUpperCase()} and the AI chose ${computerChoice.toUpperCase()}: Tie`;
   document.querySelector(`.${userChoice}`).style.backgroundColor = 'yellow';
   document.querySelector(`.${userChoice}`).style.color = 'black';
 }
 
-const displayLoser = (userChoice) => {
+const displayLoser = (userChoice, computerChoice) => {
   score();
   document.querySelector(`.${userChoice}`).style.backgroundColor = 'red';
   document.querySelector('.AIScore').innerHTML = AIScore;
-  document.querySelector('.display').innerHTML =  'loser';
+  document.querySelector('.display').innerHTML =  `You chose ${userChoice.toUpperCase()} and the AI chose ${computerChoice.toUpperCase()}: Loser`;
 }
 
 // access to the text that would display text to the HTML
