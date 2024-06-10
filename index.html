@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ryan Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="resorces/navBar.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="resorces/navBar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
       <nav>
-        <ul class="sidebar" mouseout=hideSidebar()>
-          <li onclick=hideSidebar()><a href="#">exit</a></li>
+        <ul class="sidebar" mouseout="hideSidebar()">
+          <li onclick="hideSidebar()"><a href="#">exit</a></li>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#education">Education</a></li>
@@ -27,7 +33,9 @@
           <li class="hideOnMobile"><a href="#about">About</a></li>
           <li class="hideOnMobile"><a href="#education">Education</a></li>
           <li class="hideOnMobile"><a href="#projects">Projects</a></li>
-          <li onclick=showSidebar() class="side-bar-btn" ><a href="#">side bar</a></li>
+          <li onclick="showSidebar()" class="side-bar-btn">
+            <a href="#">side bar</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -42,14 +50,16 @@
           </div>
         </div>
       </div>
-    
+
       <div class="about page" id="about">
         <banner><h1>About</h1></banner>
         <div class="about-wrapper">
           <div class="about-box-1"></div>
           <div class="about-box-2 resume">
             <div class="resume-btn">
-              <a target="_blank" href="resorces/images/Ryan Grogan Resume.docx.pdf"><h1>Resume</h1></a>
+              <a target="_blank" href="resorces/images/Ryan Grogan Resume.docx"
+                ><h1>Resume</h1></a
+              >
             </div>
           </div>
           <div class="about-box-3">
@@ -58,47 +68,59 @@
             </div>
             <div class="about-me-content">
               <h1>About Ryan Grogan</h1>
-              <p>In university, my goal was to graduate with a BS in Computer Science. My passions eventually drifted towards language and I graduated with a BA in Japanese instead. During the pandemic, my goals again shifted back towards technological studies. Now, I am committed to furthering my career in this field and have gained much of the experience I missed out on in college through rigorous self-study and official certification through Codecademy. </p>
+              <p>
+                In university, my goal was to graduate with a BS in Computer
+                Science. My passions eventually drifted towards language and I
+                graduated with a BA in Japanese instead. During the pandemic, my
+                goals again shifted back towards technological studies. Now, I
+                am committed to furthering my career in this field and have
+                gained much of the experience I missed out on in college through
+                rigorous self-study and official certification through
+                Codecademy.
+              </p>
             </div>
             <a class="close-about-me-btn"><h2>Close</h2></a>
           </div>
-          <div class="about-box-4"></div> 
+          <div class="about-box-4"></div>
         </div>
       </div>
-    
-        <div class="education page" id="education">
-          <banner><h1>Education</h1></banner>
-          <div class="education-wrapper">
-            <div class="content-card">
 
-              <div class="center">
-                  <div class="image-container centeral"></div>
-                  <div class="content">
-                    <div class="school-title">
-                      <h1>Central Washington University</h1>
-                    </div>
-                    <div class="dates">
-                      <p>September 2017 to August 2021</p>
-                    </div>
-                    <div class="location">
-                      <p>Ellensburg, Washington</p>
-                    </div>
-                    <a class="central-washington-btn read-more-btn">Read More</a>
-                    <div class="central-washington-content contentDisplay">
-                      <ul>
-                        <li>BA Japanese language and Mathematics minor</li>
-                        <li>English, Math tutor for International Japanese and Chinese students</li>
-                        <li>Group collaboration in code and programming</li>
-                        <li>Developed an international linguistics program with Japanese students</li>
-                      </ul>
-                    </div>
-                    <a class="close-central-washington-btn close-btn">Close</a>
-                  </div>
+      <div class="education page" id="education">
+        <banner><h1>Education</h1></banner>
+        <div class="education-wrapper">
+          <div class="content-card">
+            <div class="center">
+              <div class="image-container centeral"></div>
+              <div class="content">
+                <div class="school-title">
+                  <h1>Central Washington University</h1>
+                </div>
+                <div class="dates">
+                  <p>September 2017 to August 2021</p>
+                </div>
+                <div class="location">
+                  <p>Ellensburg, Washington</p>
+                </div>
+                <a class="central-washington-btn read-more-btn">Read More</a>
+                <div class="central-washington-content contentDisplay">
+                  <ul>
+                    <li>BA Japanese language and Mathematics minor</li>
+                    <li>
+                      English, Math tutor for International Japanese and Chinese
+                      students
+                    </li>
+                    <li>Group collaboration in code and programming</li>
+                    <li>
+                      Developed an international linguistics program with
+                      Japanese students
+                    </li>
+                  </ul>
+                </div>
+                <a class="close-central-washington-btn close-btn">Close</a>
               </div>
-
             </div>
-            <div class="content-card">
-
+          </div>
+          <div class="content-card">
             <div class="center">
               <div class="image-container uwt"></div>
               <div class="content">
@@ -114,65 +136,75 @@
                 <a class="uwt-btn read-more-btn">Read More</a>
                 <div class="uwt-content contentDisplay">
                   <ul>
-                    <li> Relevant courses: Calculus II & III, Physics I & II, Electrical Circuits, Linear Algebra</li>
-                    <li> Exposure to multisystemic programs and hardware descriptive language</li>
+                    <li>
+                      Relevant courses: Calculus II & III, Physics I & II,
+                      Electrical Circuits, Linear Algebra
+                    </li>
+                    <li>
+                      Exposure to multisystemic programs and hardware
+                      descriptive language
+                    </li>
                     <li>Data analysis and statistical methods</li>
                   </ul>
                 </div>
                 <a class="close-uwt-btn close-btn">Close</a>
               </div>
             </div>
-
-            </div>
-            <div class="content-card">
-
-              <div class="center">
-                  <div class="image-container codecademy"></div>
-                  <div class="content">
-                      <div class="school-title">
-                        <h1>Codecademy</h1>
-                      </div>
-                      <div class="dates">
-                        <p>December 2023 to Present</p>
-                      </div>
-                      <div class="location">
-                        <p>Online</p>
-                      </div>
-                      <a class="codecademy-btn read-more-btn">Read More</a>
-                      <div class="codecademy-content contentDisplay">
-                        <ul>
-                          <li>Version control projects utilizing GitHub</li>
-                          <li>Fully developed scheduled projects</li>
-                          <li>HTML, CSS, React, and Java Script</li>
-                          <li>API Requests</li>
-                        </ul>
-                      </div>
-                      <a class="close-codecademy-btn close-btn">Close</a>
+          </div>
+          <div class="content-card">
+            <div class="center">
+              <div class="image-container codecademy"></div>
+              <div class="content">
+                <div class="school-title">
+                  <h1>Codecademy</h1>
                 </div>
-            </div>
+                <div class="dates">
+                  <p>December 2023 to Present</p>
+                </div>
+                <div class="location">
+                  <p>Online</p>
+                </div>
+                <a class="codecademy-btn read-more-btn">Read More</a>
+                <div class="codecademy-content contentDisplay">
+                  <ul>
+                    <li>Version control projects utilizing GitHub</li>
+                    <li>Fully developed scheduled projects</li>
+                    <li>HTML, CSS, React, and Java Script</li>
+                    <li>API Requests</li>
+                  </ul>
+                </div>
+                <a class="close-codecademy-btn close-btn">Close</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="projects page" id="projects">
-          <banner><h1>Projects</h1></banner>
-          <div class="wrapper">
-            <div class="programing">
-              <a class="programing-btn" href="programmingProjects/programmingProjects.html">
-                <h1>Programming</h1>
-              </a>
-            </div>
-            <div class="graphic-design">
-              <a class="graphic-design-btn" href="graphicDesign/graphicDesign.html"><h1>Graphic Design</h1>
-              </a>
-            </div>
+      </div>
+      <div class="projects page" id="projects">
+        <banner><h1>Projects</h1></banner>
+        <div class="wrapper">
+          <div class="programing">
+            <a
+              class="programing-btn"
+              href="programmingProjects/programmingProjects.html"
+            >
+              <h1>Programming</h1>
+            </a>
           </div>
-          <div class="footer">
-            <h1>Ryan Grogan</h1>
-            <p>2024</p>
+          <div class="graphic-design">
+            <a
+              class="graphic-design-btn"
+              href="graphicDesign/graphicDesign.html"
+              ><h1>Graphic Design</h1>
+            </a>
           </div>
         </div>
+        <div class="footer">
+          <h1>Ryan Grogan</h1>
+          <p>2024</p>
+        </div>
+      </div>
     </main>
-    <script src="index.js"></script>    
+    <script src="index.js"></script>
     <script src="resorces/javaScript/navBar.js"></script>
-</body>
+  </body>
 </html>
