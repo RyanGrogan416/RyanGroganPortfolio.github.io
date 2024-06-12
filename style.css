@@ -285,10 +285,6 @@ a {
   padding: .6rem 0;
 }
 
-.contentDisplay {
-  display: none;
-}
-
 .contentDisplay li {
   list-style: inside square !important;
   padding: 3px;
