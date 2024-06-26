@@ -1,92 +1,92 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    width: 100%;
-    background: #000;
-    color:  #fff;
-    font-family: "Oswald", sans-serif;
-    display: flex;
-    left: 0;
-    right: 0;
-  }
-  
-  main {
-    width: 100%;
-    left: 0;
-    right: 0;
-  }
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  left: 0;
+  right: 0;
+}
+
+main {
+  width: 100%;
+  left: 0;
+  right: 0;
+}
 
 /* NAV BAR AND SIDE BAR*/
 
 nav {
-    font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    background-color: #fff;
-    box-shadow: 3px, 3px, 5px rgba(1, 1, 1, 0.1);
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    z-index: 999;
-  }
-  
-  nav ul {
-    width: 100%;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  
-  nav li {
-    height: 50px;
-  }
-  
-  nav a {
-    height: 100%;
-    padding: 0 30px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    color: black;
-  }
-  
-  nav a:hover {
-    background-color: grey;
-    color: #fff;
-  }
-  
-  nav li:first-child {
-    margin-right: auto;
-    font-weight: bold;
-  }
-  
-  .sidebar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 50dvh;
-    width: 250px;
-    z-index: 999;
-    background-color: rgb(255 255 255 / 30%);
-    backdrop-filter: blur(2px);
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center; 
-  }
-  
-  .sidebar li {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  
-  .sidebar a {
-    width: 100%;
-  }
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  background-color: #fff;
+  box-shadow: 3px, 3px, 5px rgba(1, 1, 1, 0.1);
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 999;
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  height: 50px;
+}
+
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+nav a:hover {
+  background-color: grey;
+  color: #fff;
+}
+
+nav li:first-child {
+  margin-right: auto;
+  font-weight: bold;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 50dvh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgb(255 255 255 / 30%);
+  backdrop-filter: blur(2px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.sidebar li {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  width: 100%;
+}
 
 .project {
   display: flex;
@@ -99,6 +99,7 @@ nav {
   display: flex;
   padding: 0 10%;
   height: auto;
+  width: 100%;
   flex-wrap: wrap;
 }
 
@@ -114,7 +115,7 @@ article {
   margin-bottom: 30px;
 }
 
-.luhn-link{
+.luhn-link {
   text-decoration: underline;
 }
 
@@ -132,6 +133,10 @@ article {
 
 .mixed-messages {
   min-height: 300px;
+  width: 100%;
+}
+
+.mixed-messages-context {
   width: 100%;
 }
 
@@ -164,7 +169,7 @@ article {
   flex: 1;
   border: none;
   padding: 20px;
-  margin: 5px
+  margin: 5px;
 }
 
 .rock-paper-scissors button:hover {
@@ -179,10 +184,7 @@ article {
 
 .button-wrapper {
   display: flex;
-
-  
 }
-
 
 /* luhns algorithum*/
 
@@ -211,7 +213,7 @@ input {
   float: right;
   background: transparent;
   color: white;
-  padding: .5rem 0 ;
+  padding: 0.5rem 0;
 }
 
 .enter-btn {
@@ -225,26 +227,26 @@ input {
   background-color: grey;
 }
 
-@media(max-width: 800px) {
-    .hideOnMobile{
-      display: none;
-    }
-  
-    .wrapper h1 {
-      font-size: 20px;
-    }
-
-    .mixed-messages {
-      overflow-y: scroll;
-    }
-
-    .incorrect-numbers {
-      float: left;
-    }
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
   }
-  
-  @media(max-width: 400px) {
-    .sidebar{
-      width: 100%;
-    }
+
+  .wrapper h1 {
+    font-size: 20px;
   }
+
+  .mixed-messages {
+    overflow-y: scroll;
+  }
+
+  .incorrect-numbers {
+    float: left;
+  }
+}
+
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+}
