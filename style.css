@@ -6,7 +6,7 @@
 body {
   width: 100%;
   background: #000;
-  color:  #fff;
+  color: #fff;
   font-family: "Oswald", sans-serif;
   display: flex;
   left: 0;
@@ -28,10 +28,9 @@ main {
 banner {
   display: flex;
   height: 100px;
-  text-align: center; 
+  text-align: center;
   align-items: end;
   justify-content: center;
-  font-family: "Oswald", sans-serif;
 }
 
 a {
@@ -40,11 +39,11 @@ a {
 
 /* HOME PAGE */
 
-.home{
+.home {
   width: 100%;
   display: flex;
   align-items: center;
-  background-image: url('resorces/images/sideProfile.jpg');
+  background-image: url("resorces/images/sideProfile.jpg");
   background-color: white;
   background-size: cover;
   background-position: center;
@@ -77,16 +76,7 @@ a {
   font-weight: 900;
 }
 
-
-
-
-
-
-
-
 /* ABOUT PAGE */
-
-
 
 .about-wrapper {
   display: grid;
@@ -94,7 +84,7 @@ a {
   height: 100dvh;
   left: 0;
   right: 0;
-  grid-template-areas: 
+  grid-template-areas:
     "about-box-1 about-box-2"
     "about-box-3 about-box-4";
   grid-template-rows: 1fr 1fr;
@@ -137,7 +127,6 @@ a {
   overflow: hidden;
 }
 
-
 .about-me-btn {
   background-color: black;
   color: white;
@@ -164,7 +153,12 @@ a {
 }
 
 .resume-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
+  width: 100%;
+  height: 100%;
 }
 
 .resume-btn a:link {
@@ -190,36 +184,9 @@ a {
   width: 90%;
 }
 
-.about-me-content h1 {
+.about-me-content * {
   width: 100%;
 }
-
-.about-me-content p {
-  width: 100%;
-}
-
-.close-about-me-btn {
-  background-color: black;
-  color: white;
-  width: 25%;
-  height: 12.5%;
-  display: none;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.close-about-me-btn:hover {
-  background-color: grey;
-  cursor: pointer;
-}
-
-
-
-
-
-
-
 
 /* EDUCATION PAGE */
 
@@ -246,7 +213,7 @@ a {
   justify-content: flex-start;
 }
 
-.center{
+.center {
   margin: 10px;
   width: 100%;
 }
@@ -259,30 +226,30 @@ a {
 }
 
 .centeral {
-  background-image: url('https://www.thoughtco.com/thmb/bEZuVkZ_7Gk7Sdbgl8kuVEBox5w=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/image001-d967fad9f4884a7b9560124651858705.jpg');
+  background-image: url("https://www.thoughtco.com/thmb/bEZuVkZ_7Gk7Sdbgl8kuVEBox5w=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/image001-d967fad9f4884a7b9560124651858705.jpg");
 }
 
 .uwt {
-  background-image: url('https://www.moorerubleyudell.com/sites/default/files/styles/mry-project-image-main/public/162-Main1.jpg?itok=fo6jSE-r');
+  background-image: url("https://www.moorerubleyudell.com/sites/default/files/styles/mry-project-image-main/public/162-Main1.jpg?itok=fo6jSE-r");
 }
 
 .codecademy {
-  background-image: url('https://img.freepik.com/premium-vector/young-man-sits-his-desk-workplace-using-his-personal-desktop-computer-working-online-program-work-home-concept-vector-illustration-isolated-white-background_37895-775.jpg');
+  background-image: url("https://img.freepik.com/premium-vector/young-man-sits-his-desk-workplace-using-his-personal-desktop-computer-working-online-program-work-home-concept-vector-illustration-isolated-white-background_37895-775.jpg");
 }
 .education h1 {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
 .dates {
-  font-weight: bold; 
+  font-weight: bold;
   margin: 0;
-  padding: .6rem 0;
+  padding: 0.6rem 0;
 }
 
 .location {
   font-weight: bold;
   margin: 0;
-  padding: .6rem 0;
+  padding: 0.6rem 0;
 }
 
 .contentDisplay li {
@@ -298,7 +265,6 @@ a {
   justify-content: center;
   margin: 1.428rem 3.57rem 0;
   padding: 1rem 1.1rem;
-  
 }
 
 .read-more-btn:hover {
@@ -319,16 +285,6 @@ a {
   background-color: grey;
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* Project page */
 
@@ -405,8 +361,8 @@ a {
 
 /* MEDIA INQUERIES*/
 
-@media(max-width: 800px) {
-  .hideOnMobile{
+@media (max-width: 800px) {
+  .hideOnMobile {
     display: none;
   }
 
@@ -423,7 +379,7 @@ a {
     overflow: scroll;
   }
 
-  .about-me-btn h1{
+  .about-me-btn h1 {
     font-size: 20px;
   }
 
@@ -434,7 +390,7 @@ a {
   .resume-btn h1 {
     font-size: 20px;
   }
-  
+
   .programing h1 {
     font-size: 16px;
   }
