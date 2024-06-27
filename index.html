@@ -21,20 +21,29 @@
     <header>
       <nav>
         <ul class="sidebar" mouseout="hideSidebar()">
-          <li onclick="hideSidebar()"><a href="#">exit</a></li>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#education">Education</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a class="dropdown-item" href="programmingProjects/programmingProjects.html">Programming</a></li>
+          <li><a class="dropdown-item" href="graphicDesign/graphicDesign.html">Graphic Design</a></li>
+          <li onclick="hideSidebar()"><a href="#">Exit</a></li>
         </ul>
         <ul>
           <li><a href="#about">RG</a></li>
           <li class="hideOnMobile"><a href="#home">Home</a></li>
           <li class="hideOnMobile"><a href="#about">About</a></li>
-          <li class="hideOnMobile"><a href="#education">Education</a></li>
-          <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+          <li class="hideOnMobile">
+            <div class="projects">
+              <a href="#">Projects</a>
+              <div class="dropdown-content">
+                <a class="dropdown-item" href="programmingProjects/programmingProjects.html">Programming</a>
+                <a class="dropdown-item" href="graphicDesign/graphicDesign.html">Graphic Design</a>
+              </div>
+            </div>
+          </li>
+          <li><a class="hideOnMobile" href="#education">Education</a></li>
           <li onclick="showSidebar()" class="side-bar-btn">
-            <a href="#">side bar</a>
+            <a href="#">Side Bar</a>
           </li>
         </ul>
       </nav>
@@ -72,7 +81,7 @@
           </div>
           <div class="about-box-3">
             <div class="about-me-btn">
-              <h1>About</h1>
+              <h1>More</h1>
             </div>
             <div class="about-me-content">
               <h1>About Ryan Grogan</h1>

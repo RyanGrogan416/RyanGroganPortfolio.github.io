@@ -1,85 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Graphic Design Projects</title>
-        <link rel="stylesheet" href="graphicDesignStyle.css">
-        <link rel="stylesheet" href="../resorces/navBar.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <nav>
-              <ul class="sidebar" mouseout=hideSidebar()>
-                <li onclick=hideSidebar()><a href="#">exit</a></li>
-                <li><a href="../index.html#home">Home</a></li>
-                <li><a href="../index.html#about">About</a></li>
-                <li><a href="../index.html#education">Education</a></li>
-                <li><a href="../index.html#projects">Projects</a></li>
-              </ul>
-              <ul>
-                <li><a href="../index.html#about">RG</a></li>
-                <li class="hideOnMobile"><a href="../index.html#home">Home</a></li>
-                <li class="hideOnMobile"><a href="../index.html#about">About</a></li>
-                <li class="hideOnMobile"><a href="../index.html#education">Education</a></li>
-                <li class="hideOnMobile"><a href="../index.html#projects">Projects</a></li>
-                <li onclick=showSidebar() class="side-bar-btn" ><a href="#">side bar</a></li>
-              </ul>
-            </nav>
-        </header>
-        <main>
-            <banner>
-                <div class="info">
-                    <p>Intro to Python final project. This project was created to test lighting and tessellation. Created at the beginning of my graphic design career, I see many areas needed for improvement. This page serves as a progressive display of my projects and ongoing committment to improving my craft.</p>
-                </div>
-            </banner>
-            <div class="page">
-                <div class="glass">
-                </div>
-                <div class="wrapper glass-content">
-                  <article class="content glass-content">
-                      <h1>Glass</h1>
-                      <p>This project was made to test how a plane could be used as a light source as well as realism as evidenced by the water and ice. As I've further developed my skills through independent study, I can see how rendering and composition issues could be resolved with a little troubleshooting.</p>
-                  </article>
-                </div>
-                <div class="trees"></div>
-                <div class="wrapper trees-content">
-                  <article class="content">
-                      <h1>Trees</h1>
-                      <p>An attempt to combine the unnatural geometric look with the natural look of trees. Similarly with my past projects, I have gained more tools to create a better blend and add more contrast to my projects and see how my progression has developed through these past projects compared to more recent ones.</p>
-                  </article>
-                </div>
-                <div class="doughnut"></div>
-                <div class="wrapper doughnut-content">
-                  <article class="content">
-                      <h1>Doughnut</h1>
-                      <p>Based on <a href="https://www.youtube.com/watch?v=B0J27sf9N1Y&list=PLjEaoINr3zgEPv5y--4MKpciLaoQYZB1Z">Blender Guru's</a> tutorial, I was able to create a more realistic project. Compared to my past projects, this project is more complex and utilizes a wider breadth of skill gained recently.</p>
-                  </article>
-                </div>
-                <div class="wrapper kortni-logo-content">
-                    <article class="content">
-                        <h1>Logo</h1>
-                        <p> I was commissioned to create an animated logo, something that tested skills I hadn't yet implemented. The end result came together well and satisfied the customer and myself. As you can see, motion, lighting, texture, and other features were all used to bring the logo to life.</p>
-                    </article>
-                </div>
-                <div class="kortni-logo">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/1IkPO2beYNs?si=AHImKmm_ptaVdKoX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="coffee-video">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/l8SayEkk2V8?si=WWA7zhaizkfue4ld" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <div class="wrapper coffee-content">
-                  <article class="content">
-                      <h1>Coffee</h1>
-                      <p>Another animated creation using newer skills and techniques. Here, the focus is on the pouring which as a first attempt proved challenging but not impossible. Other elements used here allowed me to hone skills in animation further, and this is still a step forward from my past projects.</p>
-                  </article>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graphic Design Projects</title>
+    <link rel="stylesheet" href="graphicDesignStyle.css" />
+    <link rel="stylesheet" href="../resorces/navBar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="sidebar" mouseout="hideSidebar()">
+          <li><a href="../index.html#home">Home</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li>
+            <a href="../programmingProjects/programmingProjects.html"
+              >Programming</a
+            >
+          </li>
+          <li><a href="../index.html#education">Education</a></li>
+          <li onclick="hideSidebar()"><a href="#">Exit</a></li>
+        </ul>
+        <ul>
+          <li><a href="#about">RG</a></li>
+          <li class="hideOnMobile"><a href="../index.html#home">Home</a></li>
+          <li class="hideOnMobile"><a href="../index.html#about">About</a></li>
+          <li class="hideOnMobile">
+            <div class="projects">
+              <a href="#">Projects</a>
+              <div class="dropdown-content">
+                <a
+                  class="dropdown-item"
+                  href="../programmingProjects/programmingProjects.html"
+                  >Programming</a
+                >
               </div>
             </div>
-        </main>
-        <script src="../resorces/javaScript/navBar.js"></script>
-    </body>
+          </li>
+          <li>
+            <a class="hideOnMobile" href="../index.html#education">Education</a>
+          </li>
+          <li onclick="showSidebar()" class="side-bar-btn">
+            <a href="#">Side Bar</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <banner>
+        <div class="info">
+          <p>
+            Intro to Python final project. This project was created to test
+            lighting and tessellation. Created at the beginning of my graphic
+            design career, I see many areas needed for improvement. This page
+            serves as a progressive display of my projects and ongoing
+            committment to improving my craft.
+          </p>
+        </div>
+      </banner>
+      <div class="page">
+        <div class="glass"></div>
+        <div class="wrapper glass-content">
+          <article class="content glass-content">
+            <h1>Glass</h1>
+            <p>
+              This project was made to test how a plane could be used as a light
+              source as well as realism as evidenced by the water and ice. As
+              I've further developed my skills through independent study, I can
+              see how rendering and composition issues could be resolved with a
+              little troubleshooting.
+            </p>
+          </article>
+        </div>
+        <div class="trees"></div>
+        <div class="wrapper trees-content">
+          <article class="content">
+            <h1>Trees</h1>
+            <p>
+              An attempt to combine the unnatural geometric look with the
+              natural look of trees. Similarly with my past projects, I have
+              gained more tools to create a better blend and add more contrast
+              to my projects and see how my progression has developed through
+              these past projects compared to more recent ones.
+            </p>
+          </article>
+        </div>
+        <div class="doughnut"></div>
+        <div class="wrapper doughnut-content">
+          <article class="content">
+            <h1>Doughnut</h1>
+            <p>
+              Based on
+              <a
+                href="https://www.youtube.com/watch?v=B0J27sf9N1Y&list=PLjEaoINr3zgEPv5y--4MKpciLaoQYZB1Z"
+                >Blender Guru's</a
+              >
+              tutorial, I was able to create a more realistic project. Compared
+              to my past projects, this project is more complex and utilizes a
+              wider breadth of skill gained recently.
+            </p>
+          </article>
+        </div>
+        <div class="wrapper kortni-logo-content">
+          <article class="content">
+            <h1>Logo</h1>
+            <p>
+              I was commissioned to create an animated logo, something that
+              tested skills I hadn't yet implemented. The end result came
+              together well and satisfied the customer and myself. As you can
+              see, motion, lighting, texture, and other features were all used
+              to bring the logo to life.
+            </p>
+          </article>
+        </div>
+        <div class="kortni-logo">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/1IkPO2beYNs?si=AHImKmm_ptaVdKoX"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="coffee-video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/l8SayEkk2V8?si=WWA7zhaizkfue4ld"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="wrapper coffee-content">
+          <article class="content">
+            <h1>Coffee</h1>
+            <p>
+              Another animated creation using newer skills and techniques. Here,
+              the focus is on the pouring which as a first attempt proved
+              challenging but not impossible. Other elements used here allowed
+              me to hone skills in animation further, and this is still a step
+              forward from my past projects.
+            </p>
+          </article>
+        </div>
+      </div>
+    </main>
+    <script src="../resorces/javaScript/navBar.js"></script>
+  </body>
 </html>

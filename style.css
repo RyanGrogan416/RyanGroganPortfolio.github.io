@@ -351,6 +351,10 @@ a {
     display: none;
   }
 
+  .home-text {
+    width: 50%;
+  }
+
   .wrapper h1 {
     font-size: 20px;
   }

@@ -1,105 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>programming Projects</title>
-        <link rel="stylesheet" href="./programmingProjectsStyle.css">
-        <link rel="stylesheet" href="../resorces/navBar.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <nav>
-              <ul class="sidebar" mouseout=hideSidebar()>
-                <li onclick=hideSidebar()><a href="#">exit</a></li>
-                <li><a href="../index.html#home">Home</a></li>
-                <li><a href="../index.html#about">About</a></li>
-                <li><a href="../index.html#education">Education</a></li>
-                <li><a href="../index.html#projects">Projects</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>programming Projects</title>
+    <link rel="stylesheet" href="./programmingProjectsStyle.css" />
+    <link rel="stylesheet" href="../resorces/navBar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="sidebar" mouseout="hideSidebar()">
+            <li><a href="../index.html#home">Home</a></li>
+            <li><a href="../index.html#about">About</a></li>
+            <li>
+                <a class="dropdown-item" href="graphicDesign/graphicDesign.html"
+                >Graphic Design</a
+                >
+            </li>
+            <li><a href="../index.html#education">Education</a></li>
+            <li onclick="hideSidebar()"><a href="#">Exit</a></li>
+        </ul>
+        <ul>
+          <li><a href="#about">RG</a></li>
+          <li class="hideOnMobile"><a href="../index.html#home">Home</a></li>
+          <li class="hideOnMobile"><a href="../index.html#about">About</a></li>
+          <li class="hideOnMobile">
+            <div class="projects">
+              <a href="#">Projects</a>
+              <div class="dropdown-content">
+                <a
+                  class="dropdown-item"
+                  href="../graphicDesign/graphicDesign.html"
+                  >Graphic Design</a
+                >
+              </div>
+            </div>
+          </li>
+          <li><a class="hideOnMobile" href="../index.html#education">Education</a></li>
+          <li onclick="showSidebar()" class="side-bar-btn">
+            <a href="#">Side Bar</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="project">
+        <div class="wrapper">
+          <article class="mixed-messages-context">
+            <h1>Mixed Messages</h1>
+            <p>Mad Libs simulator utilizing Java Script syntax.</p>
+            <p>
+              Details available for inspection through mixedMessages.js file.
+              Please search how to inspect on the browser you are currently
+              using.
+            </p>
+            <p>Enjoy.</p>
+          </article>
+          <div class="mixed-messages">
+            <p class="mixed-messages-text-feild"></p>
+            <a class="mixed-messages-btn" onclick="throwMessage()">Create</a>
+          </div>
+        </div>
+      </div>
+      <div class="project">
+        <div class="wrapper">
+          <article class="credit-card-checker-content">
+            <h1>Credit Card Checker</h1>
+            <p>
+              Utilizing the
+              <a
+                class="luhn-link"
+                target="_blank"
+                href="https://en.wikipedia.org/wiki/Luhn_algorithm#Description"
+                >Luhn algorithm</a
+              >
+              I have created a credit card checker integrating this simple
+              formula in the same way that government agencies, credit card
+              companies, or corporate survey programs verify valid numbers.
+            </p>
+            <p>Copy and past either set of numbers from the list.</p>
+            <p>
+              Note: this algorithm is used to verify against user mistakes, not
+              to prevent attacks by malicious entities.
+            </p>
+            <div class="number-set">
+              <ul class="correct-numbers">
+                <li>valid: 4539677908016808</li>
+                <li>valid: 5535766768751439</li>
+                <li>valid: 371612019985236</li>
+                <li>valid: 6011144340682905</li>
+                <li>valid: 4539404967869666</li>
               </ul>
-              <ul>
-                <li><a href="../index.html#about">RG</a></li>
-                <li class="hideOnMobile"><a href="../index.html#home">Home</a></li>
-                <li class="hideOnMobile"><a href="../index.html#about">About</a></li>
-                <li class="hideOnMobile"><a href="../index.html#education">Education</a></li>
-                <li class="hideOnMobile"><a href="../index.html#projects">Projects</a></li>
-                <li onclick=showSidebar() class="side-bar-btn"><a href="#">side bar</a></li>
+              <ul class="incorrect-numbers">
+                <li>invalid: 4532778771091795</li>
+                <li>invalid: 5795593392134643</li>
+                <li>invalid: 375796084459914</li>
+                <li>invalid: 6011127961777935</li>
+                <li>invalid: 5382019772883854</li>
               </ul>
-            </nav>
-        </header>
-        <main>
-            <div class="project">
-                <div class="wrapper">
-                    <article class="mixed-messages-context">
-                        <h1>Mixed Messages</h1>
-                        <p>Mad Libs simulator utilizing Java Script syntax.
-                        <p>Details available for inspection through mixedMessages.js file. Please search how to inspect on the browser you are currently using.</p>
-                        <p>Enjoy.</p>
-                    </article>
-                    <div class="mixed-messages">
-                        <p class="mixed-messages-text-feild"></p>
-                        <a class="mixed-messages-btn" onclick=throwMessage() >Create</a>
-                    </div>
-                </div>
             </div>
-            <div class="project">
-                <div class="wrapper">
-                    <article class="credit-card-checker-content">
-                        <h1>Credit Card Checker</h1>
-                        <p>Utilizing the <a class="luhn-link" target="_blank" href="https://en.wikipedia.org/wiki/Luhn_algorithm#Description">Luhn algorithm</a> I have created a credit card checker integrating this simple formula in the same way that government agencies, credit card companies, or corporate survey programs verify valid numbers.</p>
-                        <p>Copy and past either set of numbers from the list.</p>
-                        <p>Note: this algorithm is used to verify against user mistakes, not to prevent attacks by malicious entities.</p>
-                        <div class="number-set">
-                            <ul class="correct-numbers">
-                                <li>valid: 4539677908016808</li>
-                                <li>valid: 5535766768751439</li>
-                                <li>valid: 371612019985236</li>
-                                <li>valid: 6011144340682905</li>
-                                <li>valid: 4539404967869666</li>
-                            </ul>
-                            <ul class="incorrect-numbers">
-                                <li>invalid: 4532778771091795</li>
-                                <li>invalid: 5795593392134643</li>
-                                <li>invalid: 375796084459914</li>
-                                <li>invalid: 6011127961777935</li>
-                                <li>invalid: 5382019772883854</li>
-                            </ul>
-                        </div>
-                    </article>
-                    <p class="result"></p>
-                    <div class="input-outline">
-                        <button class="enter-btn">Verify</button>
-                        <input type="text" id="numberText" required>
-                    </div>
-                    <div class="credit-card-checker">
-                        
-                    </div>
-                </div>
+          </article>
+          <p class="result"></p>
+          <div class="input-outline">
+            <button class="enter-btn">Verify</button>
+            <input type="text" id="numberText" required />
+          </div>
+          <div class="credit-card-checker"></div>
+        </div>
+      </div>
+      <div class="project">
+        <div class="wrapper">
+          <article class="rock-paper-scissors">
+            <h1>Rock, Paper, Scissors: Shoot!</h1>
+            <h2>User: <span class="userScore">0</span></h2>
+            <h2>AI: <span class="AIScore">0</span></h2>
+            <div class="button-wrapper">
+              <button class="rock"><h1>rock</h1></button>
+              <button class="paper"><h1>paper</h1></button>
+              <button class="scissors"><h1>scissors</h1></button>
             </div>
-            <div class="project">
-                <div class="wrapper">
-                    <article class="rock-paper-scissors">
-                        <h1>Rock, Paper, Scissors:  Shoot!</h1>
-                        <h2>User: <span class="userScore">0</span></h2>
-                        <h2>AI: <span class="AIScore">0</span></h2>
-                        <div class="button-wrapper">
-                            <button class="rock"><h1>rock</h1></button>
-                            <button class="paper"><h1>paper</h1></button>
-                            <button class="scissors"><h1>scissors</h1></button>
-                        </div>
-                        <h1 class="display"></h1>
-                    </article>
-                </div>
-            </div>
-        </main>
-        <script src="../resorces/javaScript/creditCardChecker.js"></script>
-        <script src="../resorces/javaScript/rockPaperScissors.js"></script>
-        <script src="../resorces/javaScript/mixedMessages.js"></script>
-        <script src="../resorces/javaScript/navBar.js"></script>
-    </body>
-    
+            <h1 class="display"></h1>
+          </article>
+        </div>
+      </div>
+    </main>
+    <script src="../resorces/javaScript/creditCardChecker.js"></script>
+    <script src="../resorces/javaScript/rockPaperScissors.js"></script>
+    <script src="../resorces/javaScript/mixedMessages.js"></script>
+    <script src="../resorces/javaScript/navBar.js"></script>
+  </body>
 </html>
