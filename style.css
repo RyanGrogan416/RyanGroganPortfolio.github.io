@@ -342,6 +342,8 @@ a {
   display: flex;
   justify-content: start;
   padding: 25px 0;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
 }
 
 /* MEDIA INQUERIES*/
@@ -349,6 +351,10 @@ a {
 @media (max-width: 800px) {
   .hideOnMobile {
     display: none;
+  }
+
+  .home-text {
+    width: 50%;
   }
 
   .wrapper h1 {
